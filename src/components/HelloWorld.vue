@@ -37,7 +37,7 @@ export default {
   },
   async mounted(){
     await axios
-        .get('http://localhost:3000/ads')
+        .get('https://kijiji-notifier-api.herokuapp.com/ads')
         .then(response => {
             this.ads = response.data.reverse();
         });
